@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坤坤乐园</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu">
+        <h1>坤坤乐园</h1>
+        <div id="game-selection">
+            <button id="kun-basketball-btn">坤打篮球</button>
+            <!-- 在这里添加更多游戏按钮 -->
+        </div>
+    </div>
+
+    <div id="kun-basketball-menu" style="display: none;">
+        <h1>坤打篮球</h1>
+        <button id="start-btn">开始游戏</button>
+        <button id="instructions-btn">游戏说明</button>
+        <button id="back-to-main-btn">返回主菜单</button>
+    </div>
+
+    <div id="instructions" style="display: none;">
+        <h2>游戏说明</h2>
+        <p>使用 A 和 D 键或屏幕按钮左右移动角色。</p>
+        <p>自动发射篮球，尽可能多地投中篮筐得分。</p>
+        <p>使用空格键或暂停按钮暂停游戏。</p>
+        <button id="back-btn">返回</button>
+    </div>
+
+    <div id="game-wrapper" style="display: none;">
+        <div id="game-container">
+            <canvas id="game-canvas"></canvas>
+            <div id="score">得分: <span id="score-value">0</span></div>
+        </div>
+        <div id="controls">
+            <button id="left-btn"></button>
+            <button id="pause-btn">暂停</button>
+            <button id="right-btn"></button>
+        </div>
+        <button id="return-btn">返回</button>
+    </div>
+
+    <img id="player-image" src="basketball_player.png" style="display: none;">
+    <audio id="score-sound" src="file:///C:/Users/38218/Desktop/kj/jj.mp3"></audio>
+    <audio id="shoot-sound" src="shoot.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
